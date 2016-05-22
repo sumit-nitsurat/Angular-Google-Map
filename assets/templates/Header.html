@@ -1,0 +1,13 @@
+ <h3><a ui-sref="home">Angular Google Map</a>
+  <form class="pull-right">
+    <label class="checkbox-inline">
+      <input type="checkbox" ng-model="animCtrl.isBird" ng-change="animCtrl.filterAnimalMigration('Bird', animCtrl.isBird)">Bird
+    </label>
+    <label class="checkbox-inline" >
+      <input type="checkbox" ng-model="animCtrl.isBear" ng-change="animCtrl.filterAnimalMigration('Bear', animCtrl.isBear)">Bear
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" ng-model="animCtrl.isRabbit" ng-change="animCtrl.filterAnimalMigration('Rabbit', animCtrl.isRabbit)">Rabbit
+    </label>
+  </form>
+  </h3>

@@ -1,0 +1,33 @@
+<div class="col-md-12">
+  <br>
+  <p>Please fill the form to add animal migration :</p>
+  <!-- add animal migration info form start-->
+  <form role="form">
+    <div class="col-md-12" style="display:-webkit-box">
+      <div class="form-group col-md-4">
+        <label for="sel1">Select Animal (select one):</label>
+        <select class="form-control" id="sel1" ng-model="addAnimCtrl.animalType">
+        <option>Bird</option>
+        <option>Bear</option>
+        <option>Rabbit</option>
+      </select>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="usr">Latitude:</label>
+        <input type="number" ng-model="addAnimCtrl.latitude" class="form-control">
+        <span ng-hide="addAnimCtrl.isLatitudeValid">latitude is not valid</span>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="pwd">Longitude:</label>
+        <input type="number" ng-model="addAnimCtrl.longitude" class="form-control">
+        <span ng-hide="addAnimCtrl.isLongitudeValid">longitude is not valid</span>
+      </div>
+	</div>
+	<div class="form-group col-md-10">
+      <label for="comment">Description:</label>
+      <textarea class="form-control" ng-model="addAnimCtrl.description" rows="3" id="comment"></textarea>
+  </div>
+    <button type="button" class="btn btn-primary"  ng-click="addAnimCtrl.addAnimalMigration()" style="margin-top:5%; margin-left:5%">Apply</button>
+</form>
+ <!-- add animal migration info form end-->
+</div>
